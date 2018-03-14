@@ -1,4 +1,18 @@
-apply plugin: 'java'
- 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+subprojects {
+    buildscript {
+        repositories {
+            jcenter()
+        }
+        dependencies {
+            classpath "org.springframework.boot:spring-boot-gradle-plugin:1.5.6.RELEASE"
+        }
+    }
+
+    group 'com.rratliff'
+}
+
+repositories {
+    jcenter()
+}
+
+
